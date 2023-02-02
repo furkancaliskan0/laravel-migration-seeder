@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string("arrival_station");
             $table->integer('duration')->unsigned();
             $table->string("destination");
-            $table->integer('price')->unsigned();
+            $table->smallInteger("price");
             $table->timestamps();
         });
     }
